@@ -1,0 +1,94 @@
+// styles.scss
+
+@import 'reset';
+@import 'mixins';
+@import 'grid';
+@import 'base';
+
+$primary-bg: #5995DA;
+$secondary-bg: #D6E9FE;
+$font-stack:    Helvetica, sans-serif;
+$primary-white: #fff;
+$primary-black: #000;
+$primary-blue: blue;
+
+.menu-container {
+  color: $primary-white;
+  background-color: $primary-bg;  /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid $primary-white;  /* For debugging */
+}
+.signup {
+  margin-left: auto;
+}
+.login {
+  margin-left: 20px;
+}
+.header-container {
+  color: $primary-white;
+  background-color: $secondary-bg;
+  display: flex;
+  justify-content: center;
+}
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+}
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
